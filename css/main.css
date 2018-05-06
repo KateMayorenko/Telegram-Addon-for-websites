@@ -1,0 +1,190 @@
+
+#telegram_box {
+	display: block;
+    position: relative;
+    width: 100%;
+    background-color: #F7E8C4;
+    border-radius: 4px;
+    z-index: 9999;
+    padding: 3px;
+    box-sizing: border-box;	
+}
+
+
+#telegram_chatWrapper {
+    display: block;
+    position: relative;
+    margin: 0px 0 3px 0;
+    background-color: #FEFBF5;
+    border-radius: 3px 3px 0 0;
+    overflow-y: hidden;
+    height: 261px;
+}
+
+#telegram_chatWrapper:hover{
+    overflow-y: scroll;
+}
+
+#telegram_chatTextBox {
+    display: block;
+    position: relative;
+    width: 100%;
+    font-size: 10pt;
+    border: 0px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-weight: normal;
+    border-radius: 0 0 3px 3px;
+}
+
+#telegram_chatTextBox:focus{
+background-color:#fff;
+outline:none;
+}
+
+
+#telegram_chatInner{
+width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    position: relative;
+    top: 0;}
+    
+    
+    #telegram_chatMessages{
+    
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    }
+    
+   
+
+#telegram_chatMessages li.msg{
+    display: block;
+    position:relative;
+    margin: 5px;
+    background-color: #fff;
+    font-size: 9pt;
+    padding: 7px 5px;
+    -webkit-box-shadow: 0 1px 1px 1px #EEF0F5;
+    box-shadow: 0 1px 1px 1px #EEF0F5;
+		text-align:left;
+}   
+    
+#telegram_chatMessages b.name{
+font-weight:600;
+display:inline-block;
+width:56%;
+text-align:left;
+font-size:8pt;
+}    
+
+#telegram_chatMessages b.time{
+font-weight:300;
+display:inline-block;
+text-align: right;
+width: 40%;
+color: #ccc;
+font-size: 8pt;
+}
+    
+    
+#telegram_chatMessages .clr1{color:#1C3FA7}
+#telegram_chatMessages .clr2{color:#EF4F4F}
+ 
+ 
+
+#telegram_firstChatMsg {
+    text-align: center;
+    padding: 60px 10px;
+    font-size: 20pt;
+    color: rgba(0,0,0,0.4);
+    letter-spacing: -0.5pt;
+}
+/*элементы окна чата*/
+.tg-msg {display: inline-block;background-color: #fff;padding: 4px;margin: 4px;width: 70%;font-size: 10pt;border-radius: 3px;box-shadow: 1px 1px 2px 1px #c6c4c4;}
+.tg-right {float: right;}
+.tg-time {color: #DCDCDC;font-size: 8pt;float: right;}
+.tg-msg-header {color: #F13B3B;font-weight:bold;}
+.tg-right .tg-msg-header {color: #0852C7;}
+.tg-img {display: block;width: 100%; background-position: center center;background-repeat: no-repeat;background-size: contain;cursor: pointer;}
+.tg-img img{max-width: 100%;max-height: 100%;margin: auto;display: block;}
+.tg-rotate90{-moz-transform: rotate(90deg);-ms-transform: rotate(90deg);-webkit-transform: rotate(90deg);-o-transform: rotate(90deg);transform: rotate(90deg);}
+.tg-rotate270{moz-transform: rotate(270deg);-ms-transform: rotate(270deg);-webkit-transform: rotate(270deg);-o-transform: rotate(270deg);transform: rotate(270deg);}
+  .tg-label:before  {
+    content: url('/telegram-api/img/logo-smm.png');
+	margin-right:5px;
+	
+  }
+.tg-label{width:auto; display:block; position:fixed;  padding:5px 10px; font-size:14pt; box-sizing:border-box; color:rgba(255,255,255,0.9);cursor:pointer;}
+.tg-label-rb{right:0px;bottom:5%; transform-origin: right top; border-radius: 0 0 5px 5px;}
+
+.tg-chatbox{cursor:default; box-sizing:border-box;  box-shadow: 1px 1px 22px -3px #b0b0b0; border:1px solid rgba(0,0,0,0.23);  border-radius: 5px; min-width: 200px; min-height: 150px;}
+.tg-chatbox-rb{right:0px;bottom:5%; border-radius: 5px 0 0 5px;}
+
+
+.tg-chatbox-header{display:block; height:30px; cursor:default; position:relative;text-align:center; overflow:hidden; padding:5px; box-sizing:border-box; color:rgba(255,255,255,0.9); font-size:14pt;}
+ .tg-chatbox-header:before  {
+    content: url('/telegram-api/img/logo-smm.png');
+	margin:5px;
+	
+  }
+
+
+.tg-chatbox-close{display: block;position: absolute;right: 5px;top: 4px;color: #fff;font-size: 12pt;font-weight: 700;cursor: pointer;padding: 5px;border-radius: 50%;line-height: 70%;}
+.tg-chatbox-close:hover{background-color: rgba(0,0,0,0.3);}
+.tg-chatbox-greeting{display:block; position:absolute; bottom:0px; left:0px; right:0px; top:30px;}
+.tg-chatbox-greeting-input{display:block; margin:10px auto; text-align:center; border:0px; padding:7px; border-radius:5px; font-size:12pt;width: 90%;}
+.tg-chatbox-greeting-button{display:block; margin:15px auto 5px auto; border:0px; padding:7px; border-radius:5px; font-size:12pt; color:#fff; cursor:pointer;}
+.tg-chatbox-container{display:none; position:absolute; top:30px; left:0px; right:0px; bottom:35px; box-sizing:border-box; overflow-x:hidden; overflow-y:auto;}
+.tg-chatbox-inputArea{display:none; position:absolute; bottom:0px; left:0px; right:0px; height:35px; background-color:#fff;border-top:1px solid rgba(0,0,0,0.23);}
+.tg-chatbox-message-container{display:block; position:absolute; left:30px; top:0; right:30px; bottom:0; box-sizing:border-box;}
+.tg-chatbox-message{display:block; padding:5px; position:absolute; left:0px; top:0; font-size:9pt; width:100%; bottom:0; border:0;outline:none; resize: none ; box-sizing:border-box; overflow-x:hidden; overflow-y:hidden}
+
+#telegramAttachInput{display: none;}
+.tg-system {display: inline-block;box-sizing: initial;text-align: center;width: auto;padding: 10px 20px;}
+.tg-danger {background-color: #FF8888;color: #000;}
+.tg-start  {background-color: #98FB98;color: #000;}
+.tg-file{display: inline-block;padding: 4px 0 0 0;font-weight: bold;cursor: pointer;border-bottom: 1px dotted #000;}
+.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+@-webkit-keyframes slideInDown{0%{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}} 
+@keyframes slideInDown{0%{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}
+.slideInDown{-webkit-animation-name:slideInDown;animation-name:slideInDown}
+@-webkit-keyframes slideInLeft{0%{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}} 
+@keyframes slideInLeft{0%{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}
+.slideInLeft{-webkit-animation-name:slideInLeft;animation-name:slideInLeft}
+@-webkit-keyframes slideInRight{0%{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}} 
+@keyframes slideInRight{0%{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}
+.slideInRight{-webkit-animation-name:slideInRight;animation-name:slideInRight}
+@-webkit-keyframes slideInUp{0%{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}
+@keyframes slideInUp{0%{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}
+.slideInUp{-webkit-animation-name:slideInUp;animation-name:slideInUp}
+
+#tg-photo-show{
+	display: none;
+	position: fixed;
+	left: 0;
+	top:0;
+	right:0;
+	bottom:0;
+	background-color: rgba(0,0,0,0.6);
+	text-align: center;
+	z-index:999999999999999999999999999999999999;
+}
+
+#tg-photo-show img {
+	display: block;
+	position: relative;
+	max-width: 90%;
+	max-height: 90%;
+	margin: 5% auto;
+}
+
+
